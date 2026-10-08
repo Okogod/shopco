@@ -1,0 +1,122 @@
+.footer_section{
+    margin-top: 170px;
+    background: var(--grey_color);
+}
+
+.newsletter_div{
+    display: flex;
+    background: var(--black_color);
+    max-width: 1024px;
+    width: 90%;
+    margin: auto;
+    border-radius: 20px;
+    padding: 43px 64px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    position: relative;
+    top: -100px;
+}
+
+.newsletter_header{
+    color: var(--white_color);
+    font-family: var(--intergral_bold);
+    font-weight: 500;
+    font-size: 2rem;
+    max-width: 400px;
+    text-align: left;
+}
+
+.newsletter_input_div{
+    background: var(--white_color);
+    padding: 1em;
+    padding-right: 0;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.newsletter_input{
+    width: 85%;
+    border: none;
+    outline: none;
+    font-family: var(--satoshi_regular);
+}
+
+.subscribe_btn{
+    width: 350px;
+}
+
+.footer_logo{
+    text-align: center;
+    font-family: var(--intergral_bold);
+    font-weight: 500;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.main_footer_p{
+    text-align: center;
+    font-family: var(--satoshi_regular);
+    color: var(--light_dark);
+}
+
+.footer_line{
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.copyright_div{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+}
+
+.copyright_text{
+    font-family: var(--satoshi_regular);
+    color: var(--light_dark);
+}
+
+
+@media screen and (max-width: 750px){
+    .newsletter_div{
+        flex-direction: column;
+        gap: 20px;
+        width: 80%;
+        margin: auto;
+        padding: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .newsletter_header{
+        font-size: 1.5rem;
+    }
+
+    .newsletter_input_div{
+        padding: 10px;
+    }
+
+    .subscribe_btn{
+        width: 100%;
+        padding: 10px;
+    }
+    .footer_line{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .copyright_div{
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+    }
+}

@@ -1,0 +1,26 @@
+.hero_section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 90px;
+    padding-inline: 90px;
+    background: var(--grey_color);
+}
+
+.hero_img {
+    width: 1024px;
+    height: 700px;
+}
+
+@media screen and (max-width:750px) {
+    .hero_section {
+        flex-direction: column;
+        padding: 30px 7px;
+        margin-top: 30px;
+    }
+
+    .hero_img {
+        width: 100vw;
+        height: 100%;
+    }
+}

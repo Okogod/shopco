@@ -1,0 +1,20 @@
+button{
+    padding: 15px 80px;
+    border: 1px solid var(--grey_color);
+    background: var(--white_color);
+    border-radius: 80px;
+    font-family: var(--satoshi_medium);
+    transition: all 500ms;
+    cursor: pointer;
+}
+
+button:hover{
+    background: var(--black_color);
+    color: var(--white_color);
+}
+
+@media screen and (max-width:750px){
+    button{
+        width: 90%;
+    }
+}

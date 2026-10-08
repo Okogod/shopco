@@ -1,0 +1,36 @@
+.brands {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    flex-wrap: wrap;
+    background: var(--black_color);
+    padding: 30px 200px 50px;
+    
+
+}
+
+.brand_img {
+    width: 10%;
+    height: 10%;
+}
+
+.zara {
+    width: 5%;
+}
+
+@media screen and (max-width: 750px) {
+    .brands {
+        margin-top: -30px;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .brand_img {
+        width: 100px;
+    }
+
+    .zara {
+        width: 15%;
+    }
+}

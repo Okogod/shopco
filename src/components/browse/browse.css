@@ -1,0 +1,59 @@
+.browse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--grey_color);
+    width: 90%;
+    border-radius: 40px;
+    padding: 50px 0;
+    margin: auto;
+    scroll-margin-top: 150px;
+}
+
+.browse_header {
+    font-family: var(--intergral_bold);
+    font-weight: 500;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.browse_styles {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.style {
+    height: 300px;
+    width: 700px;
+    background: green;
+    background: var(--white_color);
+    border-radius: 20px;
+    padding: 1em;
+}
+
+.style_name{
+    font-family: var(--satoshi_medium);
+}
+
+.style_image {
+    width: 100%;
+    height: 90%;
+}
+
+@media screen and (max-width: 750px) {
+
+    .browse_header {
+        font-size: 1.8rem;
+        max-width: 246px;
+        margin: auto;
+    }
+
+    .style{
+        width: 300px;
+    }
+}

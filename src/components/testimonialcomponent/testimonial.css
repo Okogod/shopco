@@ -1,0 +1,43 @@
+.testimonial_div{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+.first_section{
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.second_part{
+    border-right: 1px solid var(--light_dark);
+    border-left: 1px solid var(--light_dark);
+    padding-inline: 32px;
+}
+
+
+.count{
+    font-family: var(--satoshi_bold);
+    font-weight: 500;
+}
+
+.success_region{
+    font-family: var(--satoshi_regular);
+    color: var(--light_dark);
+}
+
+
+@media screen  and (max-width: 750px){
+    .testimonial_div{
+        text-align: center;
+        width: 90%;
+        margin: auto;
+    }
+
+    .second_part{
+        border-right: 0;
+    }
+}

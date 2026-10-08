@@ -1,0 +1,34 @@
+.new_arrivals_header{
+    font-family: var(--intergral_bold);
+    font-weight: 500;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 30px auto 50px;
+}
+
+.products_div {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    padding-inline: 100px;
+}
+
+
+.products_images{
+    border-radius: 20px;
+    width: 450px;
+    height: 500px;
+    background: var(--grey_color);
+}
+
+@media screen and (max-width: 750px){
+    .products_images{
+        width: 90vw;
+        height: 400px;
+        margin-bottom: 20px;
+    }
+}

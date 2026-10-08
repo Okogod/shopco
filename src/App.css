@@ -1,0 +1,185 @@
+/* Fonts */
+@font-face {
+  font-family: integralBold;
+  src: url('./assets/fonts/Fontspring-DEMO-integralcf-bold.otf')
+}
+
+@font-face {
+  font-family: satoshiBold;
+  src: url('./assets/fonts/Satoshi-Bold.otf')
+}
+
+@font-face {
+  font-family: satoshiMedium;
+  src: url('./assets/fonts/Satoshi-Medium.otf')
+}
+
+@font-face {
+  font-family: satoshiRegular;
+  src: url('./assets/fonts/Satoshi-Regular.otf')
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+:root {
+
+  /* Colors */
+  --black_color: #000000;
+  --white_color: #ffffff;
+  --grey_color: #f2f0f1;
+  --red_color: #ff3333;
+  --pink_color: rgba(255, 51, 51, 0.1);
+  --light_dark: rgba(0, 0, 0, 0.6);
+  --star_color: #ffc633;
+
+  /* Font Families */
+  --intergral_bold: integralBold;
+  --satoshi_bold: satoshiBold;
+  --satoshi_medium: satoshiMedium;
+
+  --satoshi_regular: satoshiRegular;
+
+}
+
+
+
+
+/* ===== RESUSABLE STYLES ===== */
+
+
+
+/* ----- Product List Style ----- */
+
+.product_list_section {
+  scroll-margin-top: 200px;
+  background: var(--white_color);
+  width: 100%;
+  margin: 70px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.product_list_header {
+  font-family: var(--intergral_bold);
+  font-weight: 500;
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 50px;
+}
+
+.product_images_div {
+  display: flex;
+  gap: 20px;
+  cursor: pointer;
+  margin-bottom: 30px;
+  scroll-snap-type: x mandatory;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+.product_images_div::-webkit-scrollbar {
+  display: none;
+}
+
+.product_image_div{
+  scroll-snap-align: start;
+}
+
+.product_image {
+  border-radius: 20px;
+}
+
+.product_name {
+  font-family: var(--satoshi_bold);
+}
+
+.product_ratings_div {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+}
+
+.stars_span {
+  color: var(--star_color);
+  font-size: 1.3rem;
+}
+
+.rating_text {
+  font-family: var(--satoshi_medium);
+}
+
+.max_rating {
+  font-family: var(--satoshi_regular);
+  color: var(--light_dark);
+}
+
+.prices_div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--satoshi_bold);
+}
+
+.old_price {
+  color: var(--light_dark);
+  text-decoration: line-through;
+}
+
+.discount {
+  background: var(--pink_color);
+  padding: 5px 10px;
+  border-radius: 20px;
+  color: var(--red_color);
+}
+
+.line{
+  background: var(--grey_color);
+  width: 90%;
+  margin:64px auto;
+}
+
+.no_page{
+  text-align: center;
+  margin: 30px;
+  font-size: 2rem;
+  font-family: var(--intergral_bold);
+  font-weight: 500;
+}
+
+@media screen and (max-width: 750px) {
+
+  .product_list_section {
+    width: 100%;
+    scroll-margin-top: 90px;
+    
+  }
+
+  .product_list_header {
+    font-size: 2rem;
+  }
+  .product_image_div{
+    gap: 0;
+  }
+
+  .product_images_div {
+    width: 90%;
+    margin: 0 auto 20px;
+    overflow-x: scroll;
+  }
+
+  .product_image_div{
+    width: 100%;
+  }
+
+  .no_page{
+    font-size: 1.5rem;
+  }
+}
